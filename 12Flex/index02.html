@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+
+            display: flex;
+            flex-direction: row; /* 주축에 따라서 justify content는 정렬이 바뀜 */
+           /*  justify-content: space-between; */ /* 양끝으로 딱붙이고 동일한 간격 */
+            /* justify-content: space-around; */ /* 균등간격으로 나눠줌 */
+            justify-content: center; /* flex-direction(주축)에 따라 배치가 달라짐. column으로 바뀌면 세로로 */
+
+            background-color: yellowgreen;
+            padding: 20px;
+        }
+
+        .container .item {
+
+            background-color: coral;
+            margin: 20px;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <h3></h3>
+
+    <div class="container">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container2 {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            /* 교차측 정렬 (2줄이상일때)*/
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+
+            background-color: yellowgreen;
+            padding: 20px;
+            height: 500px;
+        }
+
+        .container2 .item {
+
+            background-color: coral;
+            margin: 10px;
+        }
+    </style>
+    <h3></h3>
+
+    <div class="container2">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div> 
+    <hr>
+
+
+    <style>
+        .container3 {
+
+            display: flex;
+            
+            /* 교차축 정렬(한 줄일 때) */
+            align-items: stretch;
+            align-items: flex-end;
+            align-items: center;
+            align-items: flex-start;
+            align-items: baseline; /* 글자 기준으로 교차축정렬을 맞춤 */
+            
+            background-color: yellowgreen;
+            padding: 20px;
+            height: 500px;
+        }
+
+        .container3 .item {
+
+            background-color: coral;
+            margin: 10px;
+        }
+    </style>
+    <div class="container3">
+        <div class="item" style="height: 50px; line-height:50px;">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+    
+    <hr>
+
+    <style>
+
+        .box {
+
+            background-color: pink;
+            height: 100vh; /* 화면상에 보이는 전체 높이가 vh */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+    </style>
+
+
+    <div class="box">
+
+        <div>정 가운데로</div>
+
+    </div>
+
+
+</body>
+</html>

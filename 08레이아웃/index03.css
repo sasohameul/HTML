@@ -1,0 +1,115 @@
+
+* {padding: 0; margin: 0;}
+
+.border_top {border-top: 3px solid green; margin-bottom: 6px;}
+
+header .box{border-top: 1px solid silver; border-bottom: 1px solid silver;}
+
+.main_nav{width: 1008px; margin: 0 auto;}
+
+.small_menu{overflow: hidden; padding:4px 15px;  width: 1008px; margin: 0 auto;}
+.small_menu .left{float: left; padding: 4px; font-size: 12px; color:#ddd;}
+.small_menu .right{float: right; border-left: 1px solid black; padding: 2px; font-size: 10px; color:gray; font-weight: bold; }
+
+.small_menu .left > a {text-decoration: none; color: silver;}
+.small_menu .right > a{text-decoration: none; color: #666; padding:11px 7px;}
+.logo_nav {overflow: hidden;}
+.logo_nav .main_logo{float: left;}
+.logo_nav .right_logo{float: right; margin-top: 15px;}
+.search_area {overflow: hidden;   background-image: url(img_melon/melon_search.png); display: inline-block; margin: 36px 0 24px 20px;}
+.search_area .text {float: left; margin-top: 9px; margin-left: 9px;  width: 230px; height:21px; border: none; resize: none; outline: none;}
+.search_area .search{float: left; background-image: url(img_melon/melon_btn.png); width:45px; height: 40px; border: none; background-color: white;}
+                                                                                                                                                                                                                        
+#menu_nav {overflow: hidden;}
+#menu_nav  .left > a{float: left; width: 75px; height: 40px; color: black; }
+#menu_nav  .right > a{float: right; width: 75px; height: 40px; color: black;}
+#menu_nav > p > a{text-decoration: none; color: black; font-weight: bold; font-size: 14px; margin:6px; text-align: center; }
+#menu_nav> p> a:hover{color: green;}
+
+
+section .wrap {width:  1008px; margin:0 auto;}
+
+section .list-wrap {width:480px; float: left;}
+section .slide-wrap {width: 236px;float: left;}
+section .user-wrap {width: 280px; float: left;}
+
+/* 이미지의 가수명 영역 */
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li {float: left; width: 33.3333%; position: relative;}
+.list-wrap ul li a {position: relative;}
+.list-wrap ul li a .singer {
+    
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    /* 글씨 가운데로 보내기 height와 line-height*/
+    height: 22px;
+    line-height: 22px;
+    opacity: 0.9;
+}
+
+
+.list-wrap ul li .hover-cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 155px;
+    height: 155px;
+    background-color: black;
+    z-index: 10; /* 가장위쪽으로  */
+    opacity: 0; /* 호버가 닿으면 1로 변경 */
+    transition: opacity .5s ease-in-out;
+
+}
+
+/* 호버 */
+.list-wrap ul li:hover > .hover-cont {
+
+    opacity:1;
+}
+.list-wrap ul li .hover-cont a {
+
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+/*  */
+.slide-wrap {margin-left: 4px; }
+.user-wrap {margin-left: 8px; height: 280px;}
+.user-wrap > .login-wrap{
+
+    border: 1px solid #ddd;
+    
+}
+
+.user-wrap > .promotion-wrap {
+
+    margin-top: 8px;
+}
+
+.banner_area .img_banner {  margin: 0 auto; margin-top: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+.product{
+
+    min-height: 345px;
+    box-sizing: border-box;
+}
+.product .title {
+
+    font-size: 20px;
+    font-weight: 200px;
+    font-style: bold;
+}
+
+.product .price {
+    font-size: 20px;
+}
+
+.product .delivery {
+
+    font-size: 10px;
+    color: #c4c4c4f3;
+}
+
+.total{overflow: hidden;}
+.total .left{float: left;}
+.total .right{float: right; font-size: 20px;}
+
+.bttn{overflow: hidden;}
+.bttn .btn{float: left; width: 50%;}

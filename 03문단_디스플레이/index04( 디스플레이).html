@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;} /*  */
+        ul,li{list-style: none;}
+
+        .gnb > li {
+            /* 인라인처럼 전후 줄바꿈 없이 한줄에 나란히 배치되지만,
+                블락처럼 width와 height 속성 지정 및 
+                margin과 padding 속성의 상하 간격 지정이 가능하다.(button,input,select태그) */
+            display: inline-block;
+        }
+
+        .gnb {
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .gnb > li > a {
+            display: block;
+            width: 100px;
+            line-height: 100px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #086880;
+            text-decoration: none;
+        }
+
+        .gnb > li > a:hover{
+            background-color: gold;
+
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <nav class="box">
+        <ul class="gnb">
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+
+        </ul>
+
+
+    </nav>
+
+</body>
+</html>

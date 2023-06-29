@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+
+    * {padding: 0; margin: 0;}
+
+    .big-box {
+    
+        border: 1px solid #000;
+        width: 500px;
+        height: 230px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .big-box .fish{
+
+        position: absolute;
+        top: 0;
+        left: 10px;
+
+
+    }
+
+    .big-box .text-box{
+        
+        left:150px;
+        position: absolute;
+        padding: 10px;
+
+
+    }
+    .bottom-box{ overflow: hidden; display: inline;}
+    .bottom-box .left{
+
+        float: left;
+        
+    }
+
+    .bottom-box .right{
+
+        float: right;
+        
+    }
+
+    .bottom-box .right{float: right; }
+
+    .bottom-box .left{top:0;}
+
+    .bottom-box textarea{
+        box-sizing: border-box;
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .bottom-box .left input:nth-child(2) { margin-top:3px;} /* 특정 태그의 인덱스를 지정해서 선택 */
+    
+</style>
+
+
+
+<body>
+    
+<div class="big-box">
+
+    <div class="fish">
+
+        <img src="../06Float/img/bgimg.png" alt="물고기">
+
+    </div>
+
+    <div class="text-box">
+
+        <textarea name="explain" rows="10" cols="45"></textarea>
+
+        <div class="bottom-box"><!-- 오버플로우 -->
+            
+            
+            <div class="left"><!-- left -->
+                <button class="right">등록하기</button> <!-- right -->
+                
+                <input type="text">
+                <input type="text">
+                
+            </div>  
+            
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

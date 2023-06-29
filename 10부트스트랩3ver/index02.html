@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 순서도 중요함. css-제이쿼리-js -->
+    <!-- 꼭 필요한 부트스트랩 css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- 꼭 필요한 제이쿼리 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- 꼭 필요한 부트스트랩 js -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <h3>모달창 (디자인 팝업창)</h3>
+
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#야인마">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="야인마" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+
+
+
+                <div class="modal-body">
+                    <p>백승용 야인마</p>
+                </div>
+
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

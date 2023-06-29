@@ -1,0 +1,36 @@
+*{padding:0; margin:0;}
+
+
+#main {margin-bottom:500px; border-bottom: 4px solid red;  width: 100%; background-color: white;}
+.title > h2{text-align: center; font-size: 35px; position: relative;}
+.h2 .ul > li{position: absolute; top:0;}
+ul,li{list-style: none;}
+.entry{overflow: hidden;}
+.entry .right{float: right; color: gray; font-size: small; margin: 10px; cursor: pointer;}
+.entry .left{float:left;}
+
+.wrap {margin: 0 auto;}
+
+
+
+.menu {text-align: center; }
+.menu > li { margin:20px; cursor: pointer; text-align:center; display: inline-block;}
+
+
+
+.banner_image {position: relative; height: 500px; background-image: url(images/main.jpg); background-size: cover; background-repeat: no-repeat; margin-top: 30px;}
+.banner_image .jump_on1{position:absolute; color: white; font-size:55px; letter-spacing: 20px;   top: 90px; right:300px;}
+.banner_image .jump_on2{position:absolute; color: white; font-size:40px; top: 200px; right:450px;}
+
+.under_image {text-align: center; border-bottom: 3px dashed rgb(209, 209, 209);}
+
+
+.item{  text-align: center;} 
+.item .item_one{display: inline-block; padding:40px;}
+
+
+
+#footage {bottom: 0; border-top: 2px solid gray; width: 100%;}
+.bottom_line{overflow: hidden; display: block; padding: 10px 10px;}
+.bottom_line .left{float:left;}
+.bottom_line .right{float:right;}

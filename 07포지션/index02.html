@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        *{padding:0; margin:0;}
+        ul,li {list-style: none; padding: 0; }
+
+        .list {
+
+            overflow: hidden; /* float법칙 or 넘치는 요소에 대해서 숨김 */
+            width: 800px;
+            border: 2px solid #21b8a4;
+            margin: 0 auto;
+
+        }
+
+        .list > li{
+
+            float:left;
+            width: 25.0000%;
+            height:  100px;
+            border: 1px solid sandybrown;
+            box-sizing: border-box;
+
+        }
+
+        .list .pos {
+            background-color: rgb(152, 200, 241);
+            position: relative; /* 상대적 위치(내 현재 위치)에서 z축으로 올린다. */
+            left: 10px;
+            top: 10px;
+        }
+
+        .list .abs{
+            background-color: bisque;
+            position: absolute;
+            top: 50px;            
+            right:30px;
+        }
+
+        article {
+
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+            line-height:  100px;
+            text-align: center;
+        }
+
+
+    </style>
+
+
+<body>
+    
+    <ul class="list">
+
+        <li style="position: relative;">박스 <!-- relative 설정 안하면 body가 기준이됨 -->
+            <p class="abs">포지션</p>
+
+        </li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스
+
+            <p class="pos">포지션</p>
+        </li>
+
+    </ul>
+
+    <article>
+
+        TOP
+    </article>
+
+
+
+</body>
+</html>
